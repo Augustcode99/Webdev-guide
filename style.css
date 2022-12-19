@@ -43,10 +43,10 @@ a:hover {
   color: white;
   text-decoration: none;
   border: 3px solid rgb(201, 107, 0);
-  padding: 0.7rem;
+  padding: 0.6rem;
   border-radius: 1rem;
   font-weight: bold;
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(44, 44, 44);
 }
 header > nav > a {
   color: white;
@@ -76,8 +76,9 @@ header > nav > a:hover {
   grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 0.5rem;
   grid-row-gap: 0.5rem;
-  grid-auto-rows: minmax(200px, auto);
+  grid-auto-rows: minmax(100px, auto);
   border: 20px solid rgb(55, 55, 55);
+  font-size: 1.2rem;
 }
 
 .grid-header {
@@ -110,7 +111,32 @@ article {
 
 footer {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-columns: 2fr 1.5fr 1fr;
+  background-color: rgb(66, 66, 66);
+  color: white;
+  padding: 1rem;
+}
+
+footer > nav {
+  justify-self: end;
+  margin-right: rem;
+  padding: 1rem;
+  border-left: 3px solid rgb(39, 39, 39);
+}
+
+footer > p:nth-child(1) {
+  border-right: 3px solid rgb(39, 39, 39);
+  justify-self: start;
+  /* align-self: start; */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+footer > p:nth-child(2) {
+  /* border-left: 3px solid rgb(39, 39, 39); */
+  justify-self: center;
+  align-self: start;
+  padding-left: 1rem;
+  margin-left: rem;
 }
 
 .content > .cimage {
