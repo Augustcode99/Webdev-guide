@@ -4,6 +4,12 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  background-color: rgb(66, 66, 66);
+  background-image: url(./images/background-image5.png);
+  background-size: contain;
+}
+
 header {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -26,7 +32,7 @@ header > nav {
 a {
   color: white;
   text-decoration: none;
-  border: 3px solid red;
+  border: 3px solid #ffffff;
   padding: 0.5rem;
   border-radius: 1rem;
   margin-left: 30px;
@@ -34,7 +40,7 @@ a {
 a:hover {
   color: white;
   text-decoration: none;
-  border: 3px solid red;
+  border: 3px solid rgb(201, 107, 0);
   padding: 0.7rem;
   border-radius: 1rem;
   font-weight: bold;
@@ -45,7 +51,7 @@ a:hover {
   grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 0.5rem;
   grid-row-gap: 0.5rem;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(300px, auto);
   border: 6px solid rgb(0, 0, 0);
 }
 
@@ -53,17 +59,24 @@ a:hover {
   display: grid;
   /* border: 3px solid brown; */
   justify-items: center;
+  background-color: rgb(201, 107, 0);
 }
 
 .content {
   border: 1px solid black;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 0.2fr 1fr 1fr;
+  background-color: rgb(201, 107, 0);
 }
 
 article {
-  border: 5px solid green;
+  border: 15px solid rgb(39, 39, 39);
+  color: white;
 }
 
 footer {
+}
+
+.content > .cimage {
+  align-self: center;
 }
