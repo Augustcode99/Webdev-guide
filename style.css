@@ -17,7 +17,7 @@ header {
   right: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: rgb(66, 66, 66);
+  background-color: rgb(50, 50, 50);
   color: white;
   padding: 0.3rem;
 }
@@ -25,7 +25,10 @@ header {
 .head_er {
   position: sticky;
   top: 0;
-  opacity: 0.9;
+  opacity: 0.75;
+}
+.head_er:hover {
+  opacity: 1;
 }
 
 img {
